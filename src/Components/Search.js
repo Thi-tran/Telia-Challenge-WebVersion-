@@ -21,7 +21,7 @@ export default class Search extends Component {
         e.preventDefault();
         console.log('submitted ' + this.state.searchOption )
         if (!this.state.searchOption || !this.state.keyword) {
-            this.setState({error: 'Please choose what you want to search'});
+            this.setState({error: 'Please specify what you want to search'});
         } else {
             // Search option here 
             if (this.state.searchOption === "freelancers") {
@@ -36,29 +36,28 @@ export default class Search extends Component {
     
     render() {
         return (
-            <div style={{textAlign: 'center', marginTop: 100}}>
-                <form onSubmit={this.handleSubmit}>
+            <div style={{textAlign: 'center', marginTop: 30}}>
+                <form onSubmit={this.handleSubmit} style={{display: 'flex', justifyContent: 'center'}} className="center">
                     <input 
                         value={this.state.keyword}
                         name="keyword"
+                        class="form-control"
                         onChange={this.onHandleChangeSearch}
-                        style={{fontSize: 25, marginRight: 10, marginLeft: 10}}
+                        style={{fontSize: 15, marginRight: 10, marginLeft: 10, width: 300}}
                     />
                     <select 
                         className="custom-select" 
-                        style={{fontSize: 25, marginRight: 10, marginLeft: 10}}
+                        style={{fontSize: 15, marginRight: 10, marginLeft: 10, width: 200}}
                         value={this.state.searchOption} 
                         name="searchOption"
                         onChange={this.onHandleChangeSearch}
                     >            
-                        <option value="" hidden>Search for</option>
+                        <option value="" >Search for</option>
                         <option value="freelancers">Freelancers</option>
                         <option value="projects">Open projects</option>
                         <option value="freeteam">Freelancers Team</option>
                     </select>
-                    <Button variant="contained" color="secondary" type="submit" style={{marginBottom: 10, marginRight: 10, marginLeft: 10}}>
-                        Find
-                    </Button>
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </form>                
                 {this.state.error && <p>{this.state.error}</p>}
             </div>

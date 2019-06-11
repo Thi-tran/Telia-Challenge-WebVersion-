@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Scrollchor from 'react-scrollchor';
-import Button from '@material-ui/core/Button';
 
 export default class SearchBar extends Component {
     render() {
@@ -8,7 +6,7 @@ export default class SearchBar extends Component {
             <div className="" id="Home">
                 <header className="header">
                     <div className="hero-text-box"> 
-                        <h1 style={{color: '#ffffff'}}>Nauti Kesäisestä mausta kotonasi</h1>
+                        <h1 style={{color: '#ffffff', marginBottom: 0}}>Find a team, that works!</h1>
                     </div>
                 </header>
             </div>

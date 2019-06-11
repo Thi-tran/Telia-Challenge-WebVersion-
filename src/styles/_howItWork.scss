@@ -1,0 +1,30 @@
+.howItWork{
+    margin-top: 20px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 20px;
+    background-attachment: fixed;
+}
+
+.section-steps{
+    background-color: rgba(255, 255, 255, 0.67);
+}
+
+.section-steps .row {
+    width: 100%;
+}
+.step-pic {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.step-text{
+    padding-top: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}

@@ -1,0 +1,67 @@
+.footer{
+    background-color: #318029;
+    display: relative;
+    padding-bottom: 10px;
+}
+
+.footer-nav{
+    padding-top: 20px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.footer-nav li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.footer-nav li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-text{
+    margin: 0 auto;   
+}
+
+
+/* ----------------------------------- */
+/* FOOTER ICON LIST */
+/* ----------------------------------- */
+
+
+.footer-icon-list {
+    padding: 10px;
+    margin: 0 auto;    
+}
+.footer-icon-list i{
+    font-size: 200%;
+    color: #fff;
+}
+.footer-icon-list li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.icon-facebook,
+.icon-insta,
+.icon-youtube{
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.icon-facebook:hover,
+.icon-facebook:active{
+    color: #3b5998;
+}
+
+.icon-insta:hover,
+.icon-insta:active{
+    color:#e95950;
+}
+.icon-youtube:hover,
+.icon-youtube:active{
+    color:#e93124;
+}
+

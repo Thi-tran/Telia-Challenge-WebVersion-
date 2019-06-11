@@ -1,0 +1,64 @@
+.ad-container{
+    height: 90vh;
+    $image: ("./styles/stockImg/tools.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.098),rgba(0, 0, 0, 0.043)),url($image);
+    display: block;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    clip-path: polygon(0 15vh, 100% 0, 100% 75vh, 0 100%);
+}
+
+
+.ad-text-box{
+    position: absolute;
+
+    /* Make the element in the center, with top just abit higher 40%  */
+    top: 45%;
+    left: 50%;
+    transform: translate(10%, 40%);  
+
+    text-align: center;
+    display: flex;
+}
+
+.feature-box {
+
+    transform: translate(20%, 115%);  
+
+    background-color: rgba(#fff, .8);
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+    width: 80%;
+    height: 180px;
+    transition: all .2s;
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        background-image: linear-gradient(to right, #FFDD59, #FF9700);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__text{
+
+    }
+
+    &:hover{
+        transform: scale(1.05); 
+        transform: translate(15%, 110%);  
+
+        box-shadow: 0 2.5rem 4rem rgba(#000, .5);
+    }
+}
+
+.feature-box:hover {
+
+}
+
+.feature-box h3 {
+    margin-top: .5rem;
+}
