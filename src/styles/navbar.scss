@@ -1,0 +1,77 @@
+
+.logo{
+    height: 60px;
+    width: auto;
+    float: left;
+    padding-left: 20px;
+}
+
+
+.sticktop {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  
+nav {
+    background-color: #fff;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.nav-container{
+    align-items: center;
+}
+
+.navbar {
+padding: 0;
+}
+  
+.container-fluid{
+}
+
+.main-nav {
+    padding-right: 40px;
+    margin-bottom: 5px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transform: border-bottom 0,2s;
+    transform: border-bottom 0,2s;
+    padding: 0 0 5px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    border-bottom: 2px solid #8b8ddd;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.basket-logo{
+    width: 40px;
+    cursor: pointer
+}
+
+.MuiDialogTitle-root-188 {
+    padding: 0 0;
+}
+
+DialogTitle .h2 {
+    padding-top: 10px;
+}
