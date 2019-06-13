@@ -53,7 +53,7 @@ export default class Search extends Component {
                         name="searchOption"
                         onChange={this.onHandleChangeSearch}
                     >            
-                        <option value="" >Search for</option>
+                        <option value="" >I'm looking for</option>
                         <option value="freelancer">Freelancers</option>
                         <option value="company">Open projects</option>
                         <option value="team">Freelancers Team</option>

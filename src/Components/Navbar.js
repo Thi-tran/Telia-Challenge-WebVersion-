@@ -11,12 +11,6 @@ export default class Header extends Component {
               <Link to="/"><img src={logo} className="logo" style={logoStyle} alt="logo"/></Link>
               <div style={{paddingTop: 8, display: 'flex-end', paddingRight: 50}}>
                 <Button style={{color: '#fff'}}>
-                  I am a Freelancer
-                </Button>
-                <Button style={{color: '#fff'}}>
-                  I am from a Company
-                </Button>
-                <Button style={{color: '#fff'}}>
                   Sign In
                 </Button>
                 <Button style={{color: '#fff'}}>
