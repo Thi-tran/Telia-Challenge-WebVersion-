@@ -1,7 +1,7 @@
 .ad-container{
     height: 90vh;
     $image: ("./styles/stockImg/tools.jpeg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.098),rgba(0, 0, 0, 0.043)),url($image);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.036),rgba(0, 0, 0, 0.043)),url($image);
     display: block;
     background-size: cover;
     background-position: bottom;
@@ -44,17 +44,32 @@
     }
 
     &__text{
+        text-decoration: none;
+        color: #000;
+        font-size: 25;
 
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     &:hover{
         transform: scale(1.05); 
         transform: translate(15%, 110%);  
-
         box-shadow: 0 2.5rem 4rem rgba(#000, .5);
     }
+
 }
 
+.feature-box p{
+    text-decoration: none;
+    color: #000;
+    font-size: 25;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
 .feature-box:hover {
 
 }

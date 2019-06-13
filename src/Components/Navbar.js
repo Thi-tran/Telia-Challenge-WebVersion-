@@ -7,7 +7,7 @@ export default class Header extends Component {
     render() {
       const logo = require('../assets/Logo.png');
         return (
-            <div style={{display: 'flex', justifyContent: 'space-between', backgroundColor: '#318029'}} > 
+            <div style={{display: 'flex', justifyContent: 'space-between', backgroundColor: '#0DD17A'}} > 
               <Link to="/"><img src={logo} className="logo" style={logoStyle} alt="logo"/></Link>
               <div style={{paddingTop: 8, display: 'flex-end', paddingRight: 50}}>
                 <Button style={{color: '#fff'}}>

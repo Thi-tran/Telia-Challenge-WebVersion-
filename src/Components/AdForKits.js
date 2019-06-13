@@ -9,7 +9,7 @@ export default class AdForKits extends Component {
             <div style={{marginTop: 30}}>
                 <div className="" id="Home">
                     <div className="ad-container">
-                        <div className="col span-1-of-3 box" style={{width: '33%', marginTop: 30}}>
+                        <div className="col span-1-of-3 box" style={{width: '33%', marginTop: 50}}>
                             <Link to="/kit">
                                 <div className="feature-box">
                                 

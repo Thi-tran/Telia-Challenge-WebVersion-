@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import Button from '@material-ui/core/Button';
+import { Redirect } from 'react-router';
 
 export default class Search extends Component {
     constructor(props) {
         super(props);
         this.state={
-            searchOption: '',
-            keyword: '',
-            error: ''
+            searchOption: this.props.category,
+            keyword: this.props.keyword,
+            error: '',
+            redirect: false
         }
     }
 
@@ -23,20 +24,20 @@ export default class Search extends Component {
         if (!this.state.searchOption || !this.state.keyword) {
             this.setState({error: 'Please specify what you want to search'});
         } else {
-            // Search option here 
-            if (this.state.searchOption === "freelancers") {
-                this.setState({
-                    error: ''
-                });
-            } else if (this.state.searchOption === "projects") {
-                
-            }
+            this.setState({redirect: true});
         }
     }
     
     render() {
+
+        const {searchOption, keyword} = this.state;
+        if (this.state.redirect) {
+            const link = `search/category/${searchOption}/keyword/${keyword}`;
+            return <Redirect to={link} />;
+        }        
+        
         return (
-            <div style={{textAlign: 'center', marginTop: 30}}>
+            <div style={{textAlign: 'center', marginTop: 50}}>
                 <form onSubmit={this.handleSubmit} style={{display: 'flex', justifyContent: 'center'}} className="center">
                     <input 
                         value={this.state.keyword}
@@ -53,11 +54,11 @@ export default class Search extends Component {
                         onChange={this.onHandleChangeSearch}
                     >            
                         <option value="" >Search for</option>
-                        <option value="freelancers">Freelancers</option>
-                        <option value="projects">Open projects</option>
-                        <option value="freeteam">Freelancers Team</option>
+                        <option value="freelancer">Freelancers</option>
+                        <option value="company">Open projects</option>
+                        <option value="team">Freelancers Team</option>
                     </select>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary">Search</button>
                 </form>                
                 {this.state.error && <p>{this.state.error}</p>}
             </div>
