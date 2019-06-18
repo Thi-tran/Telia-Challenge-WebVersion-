@@ -23,7 +23,7 @@ const searchList = [{
         },
         {
             _id: "5d00db64faac9a46cc233a0b",
-            skillName: "Copywrite, Content Marketing"
+            skillName: "Content Marketing"
         },
         {
             _id: "5d00db64faac9a46cc233a0a",
@@ -60,10 +60,7 @@ const searchList = [{
             _id: "5d00db64faac9a46cc233a0c",
             skillName: "AI / Machine Learning"
         },
-        {
-            _id: "5d00db64faac9a46cc233a0b",
-            skillName: "Marketing"
-        },
+
         {
             _id: "5d00db64faac9a46cc233a0a",
             skillName: "Patterns"
@@ -81,7 +78,7 @@ const searchList = [{
 
         title: "Project Manager + UX/UI Designer + Frontend Developer + Backend Developer",
 
-        description: "We are an International Team with experience in Developing Fullstack App for companies. We also have skills in AR/VR. Fun fact: We have over 3 nationalities in our team!",
+        description: "If you want to get a clean, good quality project, here we are! We have experience developing Fullstack App for companies. Our team has huge interest in AI / ML. See you!",
         
         rating: 4.5
     },
@@ -129,10 +126,9 @@ class SearchItem extends Component {
                     <img src={profile.picture[1]} style={profilePic} />
                     <img src={profile.picture[2]} style={profilePic} />
                     <img src={profile.picture[3]} style={profilePic} />
-
                 </div>
                 <div className="span-2-of-3" style={{marginLeft: 20}}>
-                    <Link to={link}> <h4 style={{color: '#FFC048'}}>{profile.fullName}</h4></Link>
+                    <Link to={link}> <h4 style={{color: '#ffa801'}}><strong>{profile.fullName}</strong></h4></Link>
                     <h6 style={{fontStyle: 'bold'}}>{profile.title}</h6>
                     <div style={{display: 'flex'}}><img src={starLogo} style={{width: 30}}/> <span style={{fontSize: 20, marginLeft: 10}}>{profile.rating}</span></div>
                     <div>{profile.description}</div>

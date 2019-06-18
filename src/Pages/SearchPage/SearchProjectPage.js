@@ -101,7 +101,7 @@ class SearchItem extends Component {
                     <img src={profile.picture} style={profilePic} />
                 </div>
                 <div className="span-2-of-3" style={{marginLeft: 20}}>
-                    <Link to={link}> <h4 style={{color: '#FFC048'}}>{profile.fullName}</h4></Link>
+                    <Link to={link}> <h4 style={{color: '#ffa801'}}><strong>{profile.fullName}</strong></h4></Link>
                     <h6 style={{fontStyle: 'bold'}}>{profile.title}</h6>
 
                     <div>{profile.description}</div>

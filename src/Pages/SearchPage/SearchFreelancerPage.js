@@ -4,21 +4,124 @@ import Footer from '../../Components/Footer';
 import {Link} from 'react-router-dom';
 const category = "freelancer"
 
+const searchList = [
+    {
+    _id: "5d01cda2192f7700243d655c",
+    email: "Bill.Gates@gmail.com",
+    password: "thi123",
+    profile: {
+    _id: "5d00db64faac9a46cc233a09",
+    skillList: [
+    {
+    _id: "5d00db64faac9a46cc233a0d",
+    skillName: "Innovation"
+    },
+    {
+    _id: "5d00db64faac9a46cc233a0c",
+    skillName: "Competing"
+    },
+    {
+    _id: "5d00db64faac9a46cc233a0b",
+    skillName: "Marketing"
+    },
+    {
+    _id: "5d00db64faac9a46cc233a0a",
+    skillName: "Rich"
+    }
+    ],
+    fullName: "Bill Gates",
+    location: "Seattle, California, USA",
+    picture: "https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg",
+    title: "Project Manager",
+    description: "A Project Manager who loves new challenges. Trying new things all the time!",
+    rating: 4.5
+    },
+    project: [ ],
+    __v: 0
+    },
+    {
+    _id: "5d01cead192f7700243d6562",
+    email: "Larry.Ellison@gmail.com",
+    password: "thi123",
+    profile: {
+    _id: "5d00db64faac9a46cc233a09",
+    skillList: [
+    {
+    _id: "5d01cead192f7700243d6567",
+    skillName: "Product Development"
+    },
+    {
+    _id: "5d01cead192f7700243d6566",
+    skillName: "Developer"
+    },
+    {
+    _id: "5d01cead192f7700243d6565",
+    skillName: "Product Exaggerate"
+    },
+    {
+    _id: "5d01cead192f7700243d6564",
+    skillName: "Marketing Strategy"
+    }
+    ],
+    fullName: "Larry Ellison",
+    location: "NewYork, USA",
+    picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Larry_Ellison_picture.png/220px-Larry_Ellison_picture.png",
+    title: "Project Manager",
+    description: "a Project Manager who likes to develop a project, but likes to brag about it more",
+    rating: 4.3
+    },
+    project: [ ],
+    __v: 0
+    },
+    {
+    _id: "5d01cf52192f7700243d6568",
+    email: "Elon.Musk@gmail.com",
+    password: "thi123",
+    profile: {
+    _id: "5d00db64faac9a46cc233a09",
+    skillList: [
+    {
+    _id: "5d01cf52192f7700243d656d",
+    skillName: "Product Development"
+    },
+    {
+    _id: "5d01cf52192f7700243d656c",
+    skillName: "Sarcasm"
+    },
+    {
+    _id: "5d01cf52192f7700243d656b",
+    skillName: "Twitter Marketing"
+    },
+    {
+    _id: "5d01cf52192f7700243d656a",
+    skillName: "Marketing Strategy"
+    }
+    ],
+    fullName: "Elon Musk",
+    location: "California, USA",
+    picture: "https://media.wired.com/photos/5c83219a692d1216df5ce666/master/pass/Transpo-Elon-Musk-RTX6P9YW.jpg",
+    title: "Tesla CEO and Twitter fan",
+    description: "Jeff who?",
+    rating: 4.7
+    },
+    project: [ ],
+    __v: 0
+    }
+];
+
+
 export default class SearchPage extends Component {
     state = {
         searchList: []
     }
-    async componentDidMount() {
-        const { keyword } = this.props.match.params
-        await fetch(`https://team-up-server.herokuapp.com/search/${category}/${keyword}`)
-            .then(response => response.json())
-            .then(searchList => this.setState({searchList}));
-    }
+    // async componentDidMount() {
+    //     const { keyword } = this.props.match.params
+    //     await fetch(`https://team-up-server.herokuapp.com/search/${category}/${keyword}`)
+    //         .then(response => response.json())
+    //         .then(searchList => this.setState({searchList}));
+    // }
     render() {
-        console.log(this.props.match.params);
         const { keyword } = this.props.match.params
-        const {searchList} = this.state;
-        console.log(searchList);
         return (
             <div>
                 <Navbar />
