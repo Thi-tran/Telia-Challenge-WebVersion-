@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
 import { withStyles } from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
-import FreelancerInfo from '../Components/FreelancerInfo';
-import FreelancerProject from '../Components/FreelancerProject';
+import FreelancerInfo from '../../Components/FreelancerPageComponents/FreelancerInfo';
+import FreelancerProject from '../../Components/FreelancerPageComponents/FreelancerProject';
 
 const info = {
     name: "Bil Gates",

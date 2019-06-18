@@ -20,7 +20,6 @@ export default class AdForKits extends Component {
                                     </p>
 
                                         <img src={TeliaLogo} style={logo}/>
-                                    <img src={OPLogo} style={logo}/>
                                 </div>
                             </Link>
                         </div>

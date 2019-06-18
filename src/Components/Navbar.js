@@ -8,14 +8,14 @@ export default class Header extends Component {
       const logo = require('../assets/Logo.png');
         return (
             <div style={{backgroundColor: '#0DD17A'}} > 
-              <div style={{width: '80%', margin: '0 auto', display: 'flex', justifyContent: 'space-between', }}>
+              <div style={{width: '80%', margin: '0 auto', display: 'flex', justifyContent: 'space-between', height: 60, alignItems: 'center'}}>
                 <Link to="/"><img src={logo} className="logo" style={logoStyle} alt="logo"/></Link>
-                <div style={{paddingTop: 8, display: 'flex-end', paddingRight: 50}}>
+                <div style={{display: 'flex-end', paddingRight: 50}}>
                   <Button style={{color: '#fff'}}>
-                    <span style={{fontFamily: 'Roboto'}}>Sign In</span>
+                    <span style={{fontFamily: 'Roboto', fontSize: '120%'}}>Sign In</span>
                   </Button>
                   <Button style={{color: '#fff'}}>
-                    <span style={{fontFamily: 'Roboto'}}>Sign Up</span>
+                    <span style={{fontFamily: 'Roboto', fontSize: '120%'}}>Sign Up</span>
                   </Button>
                 </div>
               </div>
