@@ -2,7 +2,8 @@
 header{
     height: 60vh;
     $image: ("./styles/stockImg/logo2.jpeg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.29),rgba(0, 0, 0, 0.043)),url($image);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.125),rgba(0, 0, 0, 0.201)),url("./styles/stockImg/logo2.jpeg");
+    background-size:     cover;                      /* <------ */
     display: block;
     background-position: bottom;
     position: relative;

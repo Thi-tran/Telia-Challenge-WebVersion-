@@ -6,7 +6,7 @@ export default class SearchBar extends Component {
             <div className="" id="Home">
                 <header className="header">
                     <div className="hero-text-box"> 
-                        <h1 style={{color: '#ffffff', marginBottom: 0}}>Find a team, that works!</h1>
+                        <h1 style={{color: '#ffffff', marginBottom: 0, fontSize: '300%', fontWeight: 800}}>Find a team, that works!</h1>
                     </div>
                 </header>
             </div>

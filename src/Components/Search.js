@@ -55,6 +55,8 @@ export default class Search extends Component {
                     >            
                         <option value="" >I'm looking for</option>
                         <option value="freelancer">Freelancers</option>
+                        <option value="team">Team</option>
+
                     </select>
                     <button type="submit" className="btn btn-primary">Search</button>
                 </form>                
