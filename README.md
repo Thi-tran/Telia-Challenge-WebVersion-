@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A platform for companies and freelancers to connect. Companies find their "Dream Team" of freelancers in the platform. Freelancers can find others to build their own "Dream Team" for the company.
 
 ## Available Scripts
 
